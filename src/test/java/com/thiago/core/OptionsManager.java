@@ -18,8 +18,8 @@ public class OptionsManager {
         options.addArguments("--start-maximized");
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--disable-popup-blocking");
-        options.setHeadless(true);
-        System.setProperty("webdriver.chrome.driver",new File("src/test/resources/chromedriver").getAbsolutePath());
+        options.setHeadless(false);
+        System.setProperty("webdriver.chrome.driver",new File("src/test/resources/chromedriver.exe").getAbsolutePath());
         return options;
     }
  
